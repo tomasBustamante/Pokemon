@@ -1,0 +1,14 @@
+language: java
+jdk:
+  - oraclejdk8
+
+install: ant
+
+script:
+  - ant test
+
+notifications:
+  email:
+    recipients:
+      - jbustamante@fi.uba.ar
+    on_failure: always
