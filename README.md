@@ -7,13 +7,13 @@ Ejemplo de código de modelado entre ataques de Pokemones con integración cont�
 
 ### Instalación previa
 Las únicas herramientas necesarias para trabajar en el proyecto son el entorno de desarrollo de Java ([JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)), [Apache Ant](https://ant.apache.org/) para la construcción automatizada y Git para el control de versiones.
-```
+```console
 $ sudo apt update
 $ sudo apt install default-jdk ant git
 ```
 Verificamos que se hayan instalado correctamente:
 
-```
+```console
 $ javac -version
 javac 1.8.0_181
 $ ant -version
@@ -23,20 +23,20 @@ git version 2.17.1
 ```
 ### Procedimiento
 La primera vez se inicia el repositorio local para trabajar:
-```
+```console
 $ mkdir Pokemon
 $ cd Pokemon
 $ git init
 $ git remote add origin https://github.com/tomasBustamante/Pokemon.git
 ```
 Luego se realiza un *pull* del repositorio remoto para obtener la última versión del código:
-```
+```console
 $ git pull origin master
 ```
 Una vez agregados y/o modificados los archivos necesarios se ejecuta Ant sobre el repositorio local para verificar que el *build* sea exitoso.
 
 Luego se procede a subirlos al repositorio remoto:
-```
+```console
 $ git add .
 $ git commit -m "Comentario del commit"
 $ git push origin master
