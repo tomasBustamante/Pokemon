@@ -120,7 +120,7 @@ public class AtaquesEspecialesEntrePokemonesTest {
 
     @Test
     public void test07JigglypuffNoPuedeQuedarseDormido() {
-        Jigglypuff jigglypuff1 = new Jigglypuff(); // Crea a un Jigglypuff con 80 puntos de vida
+        Jigglypuff jigglypuff1 = new Jigglypuff(); // Crea a un Jigglypuff con 60 puntos de vida
         Jigglypuff jigglypuff2 = new Jigglypuff(); // Crea a otro Jigglypuff con 60 puntos de vida
 
         assertThrows(JigglypuffNoPuedeDormirseException.class,
@@ -131,12 +131,12 @@ public class AtaquesEspecialesEntrePokemonesTest {
 
     @Test
     public void test08NadaSucedeAlDespertarAJigglypuff() {
-      Jigglypuff jigglypuff = new Jigglypuff(); // Crea a un Jigglypuff con 80 puntos de vida
+      Jigglypuff jigglypuff = new Jigglypuff(); // Crea a un Jigglypuff con 60 puntos de vida
       Pikachu pikachu = new Pikachu(); // Crea a Pikachu con 100 puntos de vida
 
       jigglypuff.despertarse(); // Nada sucede
 
-      assertEquals(80, jigglypuff.getPuntos()); // Sigue con los mismos puntos
+      assertEquals(60, jigglypuff.getPuntos()); // Sigue con los mismos puntos
 
       jigglypuff.cachetazo(pikachu); // Quita 10 puntos a Pikachu
 

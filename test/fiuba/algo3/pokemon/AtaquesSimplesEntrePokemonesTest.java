@@ -50,7 +50,7 @@ public class AtaquesSimplesEntrePokemonesTest {
     @Test
     public void test05PikachuMataAJigglypuffYJigglypuffYaNoPuedeRecibirDanio() {
         Pikachu pikachu = new Pikachu(); // Crea a Pikachu con 100 puntos de vida
-        Jigglypuff jigglypuff = new Jigglypuff(); // Crea a Jigglypuff con 80 puntos de vida
+        Jigglypuff jigglypuff = new Jigglypuff(); // Crea a Jigglypuff con 60 puntos de vida
 
         for (int i = 0; i < 3; i++) {
             pikachu.impacTrueno(jigglypuff); // quita 20 puntos
