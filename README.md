@@ -21,12 +21,15 @@ $ git --version
 git version 2.17.1
 ```
 ### Procedimiento
-La primera vez se clona el repositorio creando un repositorio local para trabajar:
+La primera vez se inicia el repositorio local para trabajar:
 ```
 $ mkdir Pokemon
 $ cd Pokemon
 $ git init
 $ git remote add origin https://github.com/tomasBustamante/Pokemon.git
+```
+Luego se realiza un *pull* del repositorio remoto para obtener la última versión del código:
+```
 $ git pull origin master
 ```
 Una vez agregados y/o modificados los archivos necesarios se ejecuta Ant sobre el repositorio local para verificar que el *build* sea exitoso.
