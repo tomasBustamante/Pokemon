@@ -1,6 +1,6 @@
 ## Pokemon
 
-[![Build Status](https://travis-ci.org/tomasBustamante/Pokemon.svg?branch=master)](https://travis-ci.org/tomasBustamante/Pokemon)
+[![Build Status](https://travis-ci.org/tomasBustamante/Pokemon.svg?branch=master)](https://travis-ci.org/tomasBustamante/Pokemon) [![codecov](https://codecov.io/gh/tomasBustamante/Pokemon/branch/master/graph/badge.svg)](https://codecov.io/gh/tomasBustamante/Pokemon)
 
 Ejemplo de código de modelado entre ataques de Pokemones con integración contínua.
 
@@ -33,3 +33,5 @@ $ git commit -m "Comentario del commit"
 $ git push origin master
 ```
 Una vez hecho el push, Travis se encarga de ejecutar el script de Ant en el repositorio de integración contínua y se notificará a todos los colaboradores en caso de error.
+
+El historial de construcciones en Travis puede verse [aquí](https://travis-ci.org/tomasBustamante/Pokemon/builds) y la medición de cobertura con CodeCov [aquí](https://codecov.io/gh/tomasBustamante/Pokemon).
