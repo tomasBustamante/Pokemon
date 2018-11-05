@@ -55,8 +55,8 @@ public class AtaquesSimplesEntrePokemonesTest {
         for (int i = 0; i < 3; i++) {
             pikachu.impacTrueno(jigglypuff); // quita 20 puntos
         }
-        
-        /* Forma casera de probar el lanzamiento de la excepción
+
+        /* Forma casera de probar el lanzamiento de la excepcion
         boolean seLanzoError = false;
         try {
         	pikachu.impacTrueno(jigglypuff);
@@ -64,9 +64,9 @@ public class AtaquesSimplesEntrePokemonesTest {
         	seLanzoError = true;
         }
         assertTrue(seLanzoError);
-        
+
         */
-        
+
         // Lo siguiente solamente funciona con JUnit 5
         assertThrows(PokemonEstaMuertoException.class,
         			()->{
@@ -82,12 +82,12 @@ public class AtaquesSimplesEntrePokemonesTest {
         for (int i = 0; i < 10; i++) {
             jigglypuff.cachetazo(pikachu); // quita 10 puntos
         }
-        
+
         assertThrows(PokemonEstaMuertoException.class,
         			()->{
         				jigglypuff.cachetazo(pikachu);
         			});
-        
+
     }
 
 }
