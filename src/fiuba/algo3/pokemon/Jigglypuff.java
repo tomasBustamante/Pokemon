@@ -3,7 +3,7 @@ package fiuba.algo3.pokemon;
 public class Jigglypuff extends Pokemon {
 
     public Jigglypuff() {
-        puntos = 60;
+      puntos = 60;
     }
 
     public void cachetazo(Pokemon otroPokemon) {
@@ -11,19 +11,17 @@ public class Jigglypuff extends Pokemon {
     }
 
     public void cantar(Pokemon otroPokemon) {
-    	otroPokemon.dormirse();
+      otroPokemon.dormirse();
     }
 
     @Override
     public void dormirse() {
-        throw new JigglypuffNoPuedeDormirseException();
+      throw new JigglypuffNoPuedeDormirseException();
     }
 
     @Override
-	public void despertarse() {
-		
-	}
+  	public void despertarse() {
 
-
+  	}
 
 }

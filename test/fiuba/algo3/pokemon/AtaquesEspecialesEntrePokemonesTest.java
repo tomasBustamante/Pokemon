@@ -129,9 +129,23 @@ public class AtaquesEspecialesEntrePokemonesTest {
         			});
     }
 
+    @Test
+    public void test08NadaSucedeAlDespertarAJigglypuff() {
+      Jigglypuff jigglypuff = new Jigglypuff(); // Crea a un Jigglypuff con 80 puntos de vida
+      Pikachu pikachu = new Pikachu(); // Crea a Pikachu con 100 puntos de vida
+
+      jigglypuff.despertarse(); // Nada sucede
+
+      assertEquals(80, jigglypuff.getPuntos()); // Sigue con los mismos puntos
+
+      jigglypuff.cachetazo(pikachu); // Quita 10 puntos a Pikachu
+
+      assertEquals(90, pikachu.getPuntos());
+    }
+
     /*
     @Test
-    public void test08CharmanderAtacaAJigglypuffConFogonazoYLeQuita2PuntosDeVida() {
+    public void test09CharmanderAtacaAJigglypuffConFogonazoYLeQuita2PuntosDeVida() {
     	Jigglypuff jigglypuff = new Jigglypuff(); // 60 puntos iniciales
     	Charmander charmander = new Charmander(); // 120 puntos iniciales
 
@@ -141,7 +155,7 @@ public class AtaquesEspecialesEntrePokemonesTest {
     }
 
     @Test
-    public void test09CharmanderAtacaAJigglypuffConFogonazoYJigglypuffAhoraSeQuita10PorCientoDelDanioCadaVezQueAtaca() {
+    public void test10CharmanderAtacaAJigglypuffConFogonazoYJigglypuffAhoraSeQuita10PorCientoDelDanioCadaVezQueAtaca() {
     	Jigglypuff jigglypuff = new Jigglypuff(); // 60 puntos iniciales
     	Charmander charmander = new Charmander(); // 120 puntos iniciales
 
@@ -153,7 +167,7 @@ public class AtaquesEspecialesEntrePokemonesTest {
     }
 
     @Test
-    public void test10CharmanderAtacaAJigglypuffConFogonazoYJigglypuffAtacaACharmanderConCachetazo() {
+    public void test11CharmanderAtacaAJigglypuffConFogonazoYJigglypuffAtacaACharmanderConCachetazo() {
     	Jigglypuff jigglypuff = new Jigglypuff(); // 60 puntos iniciales
     	Charmander charmander = new Charmander(); // 120 puntos iniciales
 
@@ -165,7 +179,7 @@ public class AtaquesEspecialesEntrePokemonesTest {
     }
 
     @Test
-    public void test11CharmanderAtacaAJigglypuffConFogonazoYJigglypuffAtacaHastaMorirPorLasQuemaduras() {
+    public void test12CharmanderAtacaAJigglypuffConFogonazoYJigglypuffAtacaHastaMorirPorLasQuemaduras() {
     	Jigglypuff jigglypuff = new Jigglypuff(); // 60 puntos iniciales
     	Charmander charmander = new Charmander(); // 120 puntos iniciales
 
