@@ -1,5 +1,6 @@
 ## Pokemon
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2bc54b6684cc40eb8248b9dbba11d462)](https://app.codacy.com/app/tomasBustamante/Pokemon?utm_source=github.com&utm_medium=referral&utm_content=tomasBustamante/Pokemon&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/tomasBustamante/Pokemon.svg?branch=master)](https://travis-ci.org/tomasBustamante/Pokemon) [![codecov](https://codecov.io/gh/tomasBustamante/Pokemon/branch/master/graph/badge.svg)](https://codecov.io/gh/tomasBustamante/Pokemon)
 
 Ejemplo de código de modelado entre ataques de Pokemones con integración contínua.
