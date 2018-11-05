@@ -1,4 +1,4 @@
-<project xmlns:ivy="antlib:org.apache.ivy.ant" name="fiuba.algo3" basedir="." default="test">
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="fiuba.algo3.pokemon" basedir="." default="test">
 	<property name="build" location="build" />
 	<property name="libs" location="libs" />
 	<property name="classes.dir" location="build" />
@@ -43,7 +43,7 @@
 			<include name="*.jar" />
 		</fileset>
 	</path>
-	
+
 	<target name="setup">
 		<delete dir="${build}" />
 		<mkdir dir="${build}" />
@@ -160,7 +160,7 @@
 	<!-- Ivy installation -->
 	<target name="download-ivy" unless="skip.download">
 		<mkdir dir="${ivy.jar.dir}" />
-		<!-- download Ivy from web site so that it can be used even 
+		<!-- download Ivy from web site so that it can be used even
          without any special installation -->
 		<echo message="installing ivy..." />
 		<get src="http://repo1.maven.org/maven2/org/apache/ivy/ivy/${ivy.install.version}/ivy-${ivy.install.version}.jar" dest="${ivy.jar.file}" usetimestamp="true" />
@@ -177,8 +177,8 @@
 	<!-- Resolve dependencies -->
 	<target name="resolve" depends="install-ivy" description="--> retrieve dependencies with ivy">
 		<ivy:retrieve conf="build" pattern="${libs}/[artifact]-[type]-[revision].[ext]" />
-		<ivy:retrieve conf="analysis" pattern="${libs}/analysis/[artifact](-[classifier]).[ext]"/>	
-		
+		<ivy:retrieve conf="analysis" pattern="${libs}/analysis/[artifact](-[classifier]).[ext]"/>
+
 	</target>
 	<!-- End of 'Resolve dependencies -->
 
