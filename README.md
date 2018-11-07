@@ -36,7 +36,16 @@ $ git pull origin master
 ```
 Una vez agregados y/o modificados los archivos necesarios se ejecuta Ant sobre el repositorio local para verificar que el *build* sea exitoso.
 
-Luego se procede a subirlos al repositorio remoto:
+Antes de integrar se debe asegurar de que el proceso de construcción resulte satisfactorio de manera local (incluyendo la ejecución de las pruebas):
+
+```console
+$ ant test
+...
+BUILD SUCCESSFUL
+Total time: 5 seconds
+```
+
+Finalmente se procede a subirlos al repositorio remoto:
 ```console
 $ git add .
 $ git commit -m "Comentario del commit"
