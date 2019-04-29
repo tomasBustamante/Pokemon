@@ -6,7 +6,7 @@ package fiuba.algo3.pokemon;
 
 public class AtaquesSegunTipoDePokemon {
 
-	/*
+    /*
 
     @Test
     public void test01CharmanderAtacaAJigglypuffConBrasasYLeQuita10PuntosDeVida() {

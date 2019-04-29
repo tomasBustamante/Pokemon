@@ -3,6 +3,7 @@ package fiuba.algo3.pokemon;
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class AtaquesSimplesEntrePokemonesTest {
@@ -63,9 +64,9 @@ public class AtaquesSimplesEntrePokemonesTest {
         } catch (PokemonEstaMuertoException e) {
         	seLanzoError = true;
         }
-        assertTrue(seLanzoError);
-
+        Assert.assertTrue(seLanzoError);
         */
+
 
         // Lo siguiente solamente funciona con JUnit 5
         assertThrows(PokemonEstaMuertoException.class,
