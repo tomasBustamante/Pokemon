@@ -69,7 +69,7 @@ public class AtaquesSegunTipoDePokemon {
     }
 
     @Test
-    public void test07BubasaurAtacaAJigglypuffConLatigoCepaYLeQuita12PuntosDeVida() {
+    public void test07BulbasaurAtacaAJigglypuffConLatigoCepaYLeQuita12PuntosDeVida() {
     	Bulbasaur bulbasaur = new Bulbasaur(); // 140 puntos iniciales
     	Jigglypuff jigglypuff = new Jigglypuff(); // 60 puntos iniciales
 
@@ -79,7 +79,7 @@ public class AtaquesSegunTipoDePokemon {
     }
 
     @Test
-    public void test08BubasaurAtacaASquirtleConLatigoCepaYLeQuita24PuntosDeVida() {
+    public void test08BulbasaurAtacaASquirtleConLatigoCepaYLeQuita24PuntosDeVida() {
     	Bulbasaur bulbasaur = new Bulbasaur(); // 140 puntos iniciales
     	Squirtle squirtle = new Squirtle(); // 150 puntos iniciales
 
@@ -89,7 +89,7 @@ public class AtaquesSegunTipoDePokemon {
     }
 
     @Test
-    public void test09BubasaurAtacaACharmanderConLatigoCepaYLeQuita6PuntosDeVida() {
+    public void test09BulbasaurAtacaACharmanderConLatigoCepaYLeQuita6PuntosDeVida() {
     	Bulbasaur bulbasaur = new Bulbasaur(); // 140 puntos iniciales
     	Charmander charmander = new Charmander(); // 120 puntos iniciales
 
