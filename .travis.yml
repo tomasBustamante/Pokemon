@@ -1,8 +1,16 @@
 language: java
 jdk:
-  - oraclejdk8
+  - openjdk8
 
 install: ant
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - ant
+      - ant-optional
 
 script:
   - ant integracion-continua
