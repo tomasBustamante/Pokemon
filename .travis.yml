@@ -2,18 +2,8 @@ language: java
 jdk:
   - openjdk8
 
-install: ant
-
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - ant
-      - ant-optional
-
 script:
-  - ant integracion-continua
+  - mvn test
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
