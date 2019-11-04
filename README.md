@@ -8,7 +8,7 @@ Ejemplo de código de modelado entre ataques de Pokemones con integración cont�
 
 ## Instalación previa
 
-Las únicas herramientas necesarias para trabajar en el proyecto son el entorno de desarrollo de Java ([JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)), [Apache Ant](https://ant.apache.org/) para la construcción automatizada y Git para el control de versiones.
+Las únicas herramientas necesarias para trabajar en el proyecto son el entorno de desarrollo de Java ([JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)), [Apache Maven](https://maven.apache.org) para la construcción automatizada y Git para el control de versiones.
 
 ```console
 $ sudo apt update
@@ -47,7 +47,7 @@ Luego se realiza un *pull* del repositorio remoto para obtener la última versi�
 $ git pull origin master
 ```
 
-Una vez agregados y/o modificados los archivos necesarios se ejecuta Ant sobre el repositorio local para verificar que el *build* sea exitoso.
+Una vez agregados y/o modificados los archivos necesarios se ejecuta Maven sobre el repositorio local para verificar que el *build* sea exitoso.
 
 Antes de integrar se debe asegurar de que el proceso de construcción resulte satisfactorio de manera local (incluyendo la ejecución de las pruebas):
 
