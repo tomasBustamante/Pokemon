@@ -15,7 +15,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <java.version>1.8</java.version>
+    <java.version>1.11</java.version>
     <mockito.version>1.10.19</mockito.version>
   </properties>
 
@@ -48,11 +48,11 @@
       <version>${mockito.version}</version>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.openjfx/javafx -->
+    <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-controls -->
     <dependency>
       <groupId>org.openjfx</groupId>
-      <artifactId>javafx</artifactId>
-      <version>11</version>
+      <artifactId>javafx-controls</artifactId>
+      <version>13</version>
       <type>pom</type>
     </dependency>
   </dependencies>
